@@ -1,0 +1,60 @@
+Data Info:
+<class 'pandas.DataFrame'>
+Index: 832374 entries, 0 to 923158
+Data columns (total 14 columns):
+ #   Column        Non-Null Count   Dtype         
+---  ------        --------------   -----         
+ 0   status        832374 non-null  str           
+ 1   price         832374 non-null  float64       
+ 2   bed           705902 non-null  float64       
+ 3   bath          721650 non-null  float64       
+ 4   acre_lot      604220 non-null  float64       
+ 5   full_address  832374 non-null  str           
+ 6   street        830827 non-null  str           
+ 7   city          832303 non-null  str           
+ 8   state         832374 non-null  str           
+ 9   zip_code      832169 non-null  float64       
+ 10  house_size    555599 non-null  float64       
+ 11  sold_date     417880 non-null  datetime64[us]
+ 12  sold_year     417880 non-null  float64       
+ 13  sold_month    417880 non-null  float64       
+dtypes: datetime64[us](1), float64(8), str(5)
+memory usage: 95.3 MB
+
+
+Summary Statistics:
+              price            bed  ...      sold_year     sold_month
+count  8.323740e+05  705902.000000  ...  417880.000000  417880.000000
+mean   5.132001e+05       3.191763  ...    2008.762786       6.740035
+min    0.000000e+00       1.000000  ...    1901.000000       1.000000
+25%    2.499000e+05       2.000000  ...    2003.000000       4.000000
+50%    4.250000e+05       3.000000  ...    2010.000000       7.000000
+75%    6.990000e+05       4.000000  ...    2017.000000      10.000000
+max    1.695000e+06      47.000000  ...    2023.000000      12.000000
+std    3.598909e+05       1.681096  ...       9.916694       3.333331
+
+[8 rows x 9 columns]
+
+First 5 Rows:
+     status     price  bed  bath  ...  house_size sold_date sold_year sold_month
+0  for_sale  105000.0  3.0   2.0  ...       920.0       NaT       NaN        NaN
+1  for_sale   80000.0  4.0   2.0  ...      1527.0       NaT       NaN        NaN
+2  for_sale   67000.0  2.0   1.0  ...       748.0       NaT       NaN        NaN
+3  for_sale  145000.0  4.0   2.0  ...      1800.0       NaT       NaN        NaN
+4  for_sale   65000.0  6.0   2.0  ...         NaN       NaT       NaN        NaN
+
+[5 rows x 14 columns]
+
+Percentage of missing values in price: 0.00%
+
+Sold date info:
+  sold_date  sold_year  sold_month
+0       NaT        NaN         NaN
+1       NaT        NaN         NaN
+2       NaT        NaN         NaN
+3       NaT        NaN         NaN
+4       NaT        NaN         NaN
+
+Visualizations saved as:
+1. histogram_price.png
+2. boxplot_price.png
