@@ -12,8 +12,10 @@ data.info()
 data.describe(include="all")
 data.head()
 data.drop_duplicates()
+data.info()
 data.isna().sum()
 expensive_houses = data[data['price'] > 50000]
+data = expensive_houses
 
 Q1 = data['price'].quantile(0.25)
 Q3 = data['price'].quantile(0.75)
