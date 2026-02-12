@@ -58,3 +58,50 @@ Sold date info:
 Visualizations saved as:
 1. histogram_price.png
 2. boxplot_price.png
+Data Info:
+<class 'pandas.DataFrame'>
+RangeIndex: 923159 entries, 0 to 923158
+Data columns (total 12 columns):
+ #   Column        Non-Null Count   Dtype  
+---  ------        --------------   -----  
+ 0   status        923159 non-null  str    
+ 1   price         923088 non-null  float64
+ 2   bed           791456 non-null  float64
+ 3   bath          807967 non-null  float64
+ 4   acre_lot      649536 non-null  float64
+ 5   full_address  923159 non-null  str    
+ 6   street        921021 non-null  str    
+ 7   city          923085 non-null  str    
+ 8   state         923159 non-null  str    
+ 9   zip_code      922954 non-null  float64
+ 10  house_size    625316 non-null  float64
+ 11  sold_date     456396 non-null  str    
+dtypes: float64(6), str(6)
+memory usage: 84.5 MB
+
+
+Summary Statistics:
+              price            bed  ...       zip_code    house_size
+count  9.230880e+05  791456.000000  ...  922954.000000  6.253160e+05
+mean   8.841225e+05       3.330352  ...    6590.061523  2.141644e+03
+std    2.623745e+06       2.070402  ...    3818.208203  3.035327e+03
+min    0.000000e+00       1.000000  ...     601.000000  1.000000e+02
+25%    2.690000e+05       2.000000  ...    2919.000000  1.130000e+03
+50%    4.750000e+05       3.000000  ...    7004.000000  1.651000e+03
+75%    8.399000e+05       4.000000  ...   10001.000000  2.499000e+03
+max    8.750000e+08     123.000000  ...   99999.000000  1.450112e+06
+
+[8 rows x 6 columns]
+
+First 5 Rows:
+     status     price  bed  bath  ...        state zip_code house_size sold_date
+0  for_sale  105000.0  3.0   2.0  ...  Puerto Rico    601.0      920.0       NaN
+1  for_sale   80000.0  4.0   2.0  ...  Puerto Rico    601.0     1527.0       NaN
+2  for_sale   67000.0  2.0   1.0  ...  Puerto Rico    795.0      748.0       NaN
+3  for_sale  145000.0  4.0   2.0  ...  Puerto Rico    731.0     1800.0       NaN
+4  for_sale   65000.0  6.0   2.0  ...  Puerto Rico    680.0        NaN       NaN
+
+[5 rows x 12 columns]
+
+Percentage of missing values in price: 0.01%
+
